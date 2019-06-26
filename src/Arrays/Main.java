@@ -26,6 +26,20 @@ public class Main {
         for (int i = 0; i < array.length; i++){
             System.out.print(array[i]+" ");
         }
+
+        int index = -1;
+        for (int i = 0; i < array.length; i++){
+            if (array[i] == 7){
+                index = i;
+                 break;
+            }
+        }
+
+        if (index!=-1){
+            System.out.println("Element found at index: "+index);
+        } else {
+            System.out.println("Element not found in the array");
+        }
     }
 
 }
