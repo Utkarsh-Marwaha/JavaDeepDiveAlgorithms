@@ -8,6 +8,8 @@ public class ShellSort {
         return shellSort(items, items.length/2);
     }
 
+//    https://www.youtube.com/watch?v=ddeLSDsYVp8
+//    https://www.programering.com/a/MjN4EjMwATY.html
     private static int[] shellSort(int[] items, int step) {
 
         if (step == 0){
