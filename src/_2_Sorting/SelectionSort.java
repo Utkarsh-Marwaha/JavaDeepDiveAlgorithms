@@ -1,5 +1,6 @@
 package _2_Sorting;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class SelectionSort {
@@ -40,22 +41,23 @@ public class SelectionSort {
 
     public static void main(String[] args) {
 
+        // Creating an object of class Scanner
         Scanner in = new Scanner(System.in);
-        System.out.println("How many elements are to be sorted?");
+
+        // Asking the user to enter the size of the array
+        System.out.println("Enter the size of the array: ");
         int size = in.nextInt();
 
-        int [] array = new int[size];
+        // declaring the array
+        int array[] = new int[size];
 
-        for (int i = 0; i < size; i++){
-            System.out.println("Enter element "+(i+1));
+        // Asking the user to enter the elements of the array
+        for (int i = 0; i<array.length; i++){
+            System.out.println("Enter element" + (i+1));
             array[i] = in.nextInt();
         }
 
-        System.out.print("The sorted array is: ");
-        for (int num: selectionSort(array)){
-            System.out.print(num+" ");
-        }
-
-
+        // Displaying the result
+        System.out.println(Arrays.toString(selectionSort(array)));
     }
 }
