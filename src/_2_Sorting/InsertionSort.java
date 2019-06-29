@@ -6,18 +6,44 @@ import java.util.Scanner;
 public class InsertionSort {
 
     // https://www.youtube.com/watch?v=lCDZ0IprFw4
-    private static int[] insertionSort(int[] items){
 
-        for (int i = 1; i < items.length; i++){
-            int key = items[i];
-            for (int j = i - 1; j>=0; j--){
+    /**
+     * Time Complexity: O(N^2)
+     * Space Complexity: O(1)
+     *
+     * Insertion sort is a stable algorithm because its preserves
+     * the relative ordering of duplicate items in the resultant array
+     *
+     * @param input array to be sorted
+     * @return the sorted array
+     */
+    private static int[] insertionSort(int[] input) {
 
-                if (key < items[j]){
-                    swap(items, j, j+1);
+        /*
+         * This is the first index of the unsorted partition
+         * of the array
+         */
+        int firstUnsortedIndex = 1;
+        // to start-off, the element at index 0 is in the sorted partition
+
+        // traverse the unsorted partition of the array from left to right
+        for (int currentUnsorted = firstUnsortedIndex; currentUnsorted < input.length; currentUnsorted++){
+
+            // pick the element to be inserted
+            int toBeInserted = input[currentUnsorted];
+
+            // traverse the sorted partition from right to left
+            for (int currentSorted = currentUnsorted - 1; currentSorted >=0 ; currentSorted--){
+
+                if (toBeInserted < input[currentSorted]) {
+
+                    // toBeInserted sits at currentSorted + 1
+                    swap(input, currentSorted+1, currentSorted);
                 }
             }
         }
-        return items;
+
+        return input;
     }
 
     /*
@@ -27,20 +53,28 @@ public class InsertionSort {
      */
     private static int[] optimisedInsertionSort(int[] items){
 
-        for (int i = 1; i < items.length; i++){
+        /*
+         * This is the first index of the unsorted partition
+         * of the array
+         */
+        int firstUnsortedIndex = 1;
+        for (int currentUnsorted = firstUnsortedIndex; currentUnsorted < items.length; currentUnsorted++){
 
-            int key = items[i];
-            int j = i-1;
 
-            /* Move elements of arr[0..i-1], that are
+            // pick the element to be inserted
+            int toBeInserted = items[currentUnsorted];
+
+            int currentSorted = currentUnsorted-1;
+
+            /* Move elements of arr[0..currentUnsorted-1], that are
             greater than key, to one position ahead
             of their current position */
-            while (j>=0 && key < items[j]){
-                items[j+1] = items[j];
-                j--;
+            while (currentSorted>=0 && toBeInserted < items[currentSorted]){
+                items[currentSorted+1] = items[currentSorted];
+                currentSorted--;
             }
 
-            items[j+1] = key;
+            items[currentSorted+1] = toBeInserted;
         }
 
         return items;
