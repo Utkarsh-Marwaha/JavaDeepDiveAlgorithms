@@ -62,7 +62,7 @@ public class CountSort {
      * Space Complexity: O(range) where range = max - min + 1
      * @param input the array to be sorted
      */
-    private static int[] countSort(int[] input){
+    private static int[] countUnstableSort(int[] input){
 
         // find the minimum and maximum elements of the input array
         int [] min_max  = getMinMax(input);
@@ -71,7 +71,7 @@ public class CountSort {
         // create the array for maintaining the counts / frequencies of the elements
         int[] countArray = new int[(max-min)+1];
 
-        // cycle through the input array and count the number of occurences
+        // cycle through the input array and count the number of occurrences
         for (int num : input){
             countArray[num - min] +=  1;
         }
@@ -111,6 +111,54 @@ public class CountSort {
         return new int[]{min, max};
     }
 
+    private static int[] countStableSort(int[] input){
+
+
+        // find the minimum and maximum elements of the input array
+        int [] min_max  = getMinMax(input);
+        int min = min_max[0], max = min_max[1];
+
+        /*To start, we must create a “count array”, which we’ll populate by tallying up
+         (or hashing) all the elements in the original array by how many times they appear
+          in the unsorted array.
+         */
+        int[] countArray = new int[(max-min)+1];
+
+        for (int num : input){
+            countArray[num-min]++;
+        }
+
+        /*Next, we’ll cumulatively add up the values in the populated count array,
+          building it up as we go along.
+         */
+        for (int j = 1; j < countArray.length; j++){
+            countArray[j] += countArray[j-1];
+        }
+
+        /*Then, we’ll shift over all the elements in the array by incrementing
+          the index of each value by one.*/
+        System.arraycopy(countArray, 0, countArray, 1, countArray.length-1);
+        countArray[0] = 0;
+
+        // create the resultant array which will hold the sorted integers
+        int[] result = new int[input.length];
+
+        /*Finally, we’ll create a new sorted array, which will be the same length as our original array.
+          We’ll iterate over our original array, and translate the values over to our new array by using
+          our count array, incrementing our count array value as we continue to sort. In this step, we’re
+          effectively using a version of a hashing function, and using our count array as a way to translate
+          values from the unsorted array into the new, sorted one.*/
+        for (int num: input){
+
+            int frequency = countArray[num-min];
+            result[frequency] = num;
+            countArray[num-min]++;
+
+        }
+
+        return result;
+    }
+
     public static void main(String[] args) {
 
         // Creating an object of class Scanner
@@ -133,7 +181,10 @@ public class CountSort {
         System.out.println(Arrays.toString(countingSort(array)));
 
         // Displaying the result
-        System.out.println(Arrays.toString(countSort(array)));;
+        System.out.println(Arrays.toString(countUnstableSort(array)));
+
+        // Displaying the result
+        System.out.println(Arrays.toString(countStableSort(array)));
     }
 }
 
