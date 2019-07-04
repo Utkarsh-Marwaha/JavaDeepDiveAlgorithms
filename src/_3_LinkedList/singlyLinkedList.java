@@ -203,6 +203,73 @@ public class singlyLinkedList<T> {
         size++;
     }
 
+    /**
+     * method to delete a node from a given position in a linked list
+     * @param pos position (1 to size) from where the node is to be deleted
+     */
+    public void deleteNode(int pos){
+
+        if (isEmpty()){
+            return; // cannot delete element from empty list
+        }
+        /*If the user wants to delete the only node of a singleton list */
+        else if (pos == 1 && size == 1){
+            head = tail = null;
+            size--;
+        }
+
+        /*If the user wants to delete the head of the linked list*/
+        else if (pos==1) {
+            // Our new head starts referring to the next Node in the linked list
+            head = head.getNext();
+            size--; // decrementing the size of the linked list after deleting the head
+        }
+        /*If the user wants to delete the tail of the linked list*/
+        else if (pos == size){
+
+            // iterator through the linked list
+            Node<T> node = head;
+
+            // we keep track of the previous node
+            Node<T> prev = head;
+
+            while (node!=tail){
+                prev = node;
+                node = node.getNext();
+            }
+
+            // our new tail is the node previously pointing to our old tail
+            tail = prev;
+            // our new tail should further be pointing towards null to indicate the end of the tail
+            tail.setNext(null);
+
+            // decrement the number of elements in the linked list
+            size--;
+        } else {
+
+            Node<T> ptr = head;
+            for (int i = 1; i < size - 1; i++) {
+
+                // stop at one position prior to the node which is to be deleted
+                if (i == pos - 1) {
+                    // ptr is the left neighbour of the node which is to be deleted
+
+                    // tmp is the right neighbour of the node which is to be deleted
+                    Node<T> tmp = ptr.getNext().getNext();
+
+                    ptr.setNext(tmp); // basically we jump the node to be deleted by connecting its neighbours directly.
+                    break;
+                }
+
+                ptr = ptr.getNext();
+            }
+
+            // decrement the number of elements in the linked list
+            size-- ;
+        }
+
+    }
+
     /*  Function to display elements  */
     public void display() {
 

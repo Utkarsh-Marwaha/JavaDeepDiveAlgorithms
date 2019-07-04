@@ -49,7 +49,7 @@ public class App {
                     if (p < 1 || p > list.getSize() )
                         System.out.println("Invalid position\n");
                     else
-//                        list.deleteAtPos(p);
+                        list.deleteNode(p);
                     break;
                 case 5 :
                     System.out.println("Empty status = "+ list.isEmpty());
