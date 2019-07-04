@@ -319,6 +319,92 @@ public class singlyLinkedList<T> {
         }
     }
 
+    /*method to recursively sort a linked list using merge sort*/
+    public Node<Integer> mergeSort(Node<Integer> node){
+        /*If the linked list doesn't contain any elements then we cannot sort it*/
+        if (node==null){
+            return null;
+        }
+        /*If the linked contains just one element then it is already sorted*/
+        else if (node.getNext()==null){
+            return node;
+        }
+        else {
+            Node<Integer> middle = getMiddleNode(node);
+            /*The second half will always be the next node to the middle one */
+            Node<Integer> secondHalf = middle.getNext();
+            middle.setNext(null);
+            return merge(mergeSort(node),mergeSort(secondHalf));
+        }
+    }
+
+    /*utility method to merge two sorted linked lists into one single linked list*/
+    private Node<Integer> merge(Node<Integer> a, Node<Integer> b) {
+
+        /*This is the node which will store our result*/
+        Node<Integer> result;
+
+        /* Base cases */
+        /*If the first list gets exhausted, we simply return
+         * whatever is present in the second one*/
+        if (a == null)
+            return b;
+
+        /*If the second list gets exhausted then we simply return
+         * whatever is present in the first one*/
+        if (b == null)
+            return a;
+
+        /* Pick either a or b, and recur */
+        if (a.getData() <= b.getData()) {
+            result = a;
+            // the next node in our result should be a comparison of the next node of list 'a' and current node of list 'b'
+            result.setNext(merge(a.getNext(), b));
+        }
+        else {
+            result = b;
+            // the next node in our result should be a comparison of the next node of list 'b' and current node of list 'a'
+            result.setNext(merge(a, b.getNext()));
+        }
+
+        return result;
+    }
+
+    /*utility method to get the middle node of a linked list */
+    private Node<Integer> getMiddleNode(Node<Integer> node) {
+        if (node==null){
+            return null;
+        }
+        /*the slowPtr will always be our middle node*/
+        Node<Integer> slowPtr = node; // initially slowPtr is equal to the first node
+
+        /*Our aim is to make fastPtr reach the end of the list*/
+        Node<Integer> fastPtr = node.getNext(); // initially fastPtr is equal to the second element of the list
+
+        while (fastPtr != null && fastPtr.getNext() != null){
+            slowPtr = slowPtr.getNext(); // slowPtr gets pushed ahead by one node
+            fastPtr = fastPtr.getNext().getNext(); // fast ptr gets pushed ahead by 2 nodes
+        }
+        /*When we break out of the while loop, the fastPtr would have reached the end of the list
+         * by which time the slowPtr would only have traversed half as many nodes i.e it would
+         * have reached the middle of the linked list */
+        return slowPtr;
+    }
+
+    /*method to merge two linked lists such that the result is a single sorted list*/
+    public Node<Integer> mergeTwoLists (Node<Integer> h1, Node<Integer> h2){
+
+        /*mergeSort(h1) will sort the list h1 for us
+         * and mergeSort(h2) will sort the list h2 for us
+         *
+         * Once we have the input lists separately sorted,
+         * we simply merge them to produce a single
+         * sorted linked list
+         * */
+
+        return merge(mergeSort(h1),mergeSort(h2));
+    }
+
     /*  Function to display elements  */
     public void display() {
 
