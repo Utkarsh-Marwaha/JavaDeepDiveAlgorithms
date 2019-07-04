@@ -38,10 +38,10 @@ public class App {
                     int num = scan.nextInt() ;
                     System.out.println("Enter position");
                     int pos = scan.nextInt() ;
-                    if (pos <= 1 || pos > list.getSize() )
+                    if (pos < 1 || pos > list.getSize() + 1)
                         System.out.println("Invalid position\n");
                     else
-//                        list.insertAtPos(num, pos);
+                        list.insertAtPos(num, pos);
                     break;
                 case 4 :
                     System.out.println("Enter position");

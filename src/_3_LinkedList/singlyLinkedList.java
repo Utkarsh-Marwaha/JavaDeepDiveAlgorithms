@@ -113,6 +113,64 @@ public class singlyLinkedList<T> {
     }
 
 
+    /**
+     * method to add a new node at kth position of our linked list
+     * @param data data value of the node to be inserted
+     *             in the linked list
+     * @param pos position at which the node is to be
+     *            inserted within the linked list
+     */
+    public void insertAtPos(T data, int pos){
+
+        // firstly, we create the node which is to be added to the linked list
+        Node<T> toBeAdded = new Node<>(data, null);
+
+        /*trying to access an illegitimate position which cannot exist at all*/
+        if (pos <1 || pos>size+1){
+            return;
+        }
+
+        /*if we want to add the new node at the head of the linked list*/
+        else if (pos==1){
+            prepend(data);
+        }
+
+        /*If we want to add the new node at the end of the linked list*/
+        else if (pos==size+1){
+            append(data);
+        }
+
+        else {
+            /*To insert the new node at the specified (legitimate) position*/
+            /*We need to traverse till the (position - 1)th node */
+
+            Node<T> prev = head; // initialization
+
+            // counter to keep track of the number of nodes traversed
+            int count = 1; // =1 because the first node is already traversed by the previous node
+
+            while (count < pos - 1){
+                // keep moving till we reach the node just before kth position
+                prev = prev.getNext();
+                count++;
+            }
+
+            /*The while loop breaks out when we reach a node just previous to the one at kth position
+             * Therefore, the kth node of our original linked list will be given by prev.getNext()*/
+            Node<T> kthNode = prev.getNext();
+
+            /*Our main objective is to add the new node between
+             prev i.e. [(k-1)th Node] and the kthNode */
+
+            // new node starts pointing kth node of original list
+            toBeAdded.setNext(kthNode);
+            // (k-1)th node of original list starts pointing this new node
+            prev.setNext(toBeAdded);
+
+            size++;
+        }
+
+    }
 
     /**
      * method to add a node at the front of the linked list
