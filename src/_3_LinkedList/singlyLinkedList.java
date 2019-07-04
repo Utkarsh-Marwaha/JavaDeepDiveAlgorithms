@@ -302,6 +302,23 @@ public class singlyLinkedList<T> {
         head = prev;
     }
 
+    /*method to reverse a linked list recursively*/
+    public Node<T> reverse(Node<T> current){
+        /*If the linked list is empty, it can't be reversed
+          Also if the linked list contains just a single element
+          then we need not reverse it
+         */
+        if (current == null || current.getNext() == null){
+            return current;
+        } else {
+            Node<T> nextNode = current.getNext();
+            current.setNext(null);
+            Node<T> rest = reverse(nextNode);
+            nextNode.setNext(current);
+            return rest;
+        }
+    }
+
     /*  Function to display elements  */
     public void display() {
 
