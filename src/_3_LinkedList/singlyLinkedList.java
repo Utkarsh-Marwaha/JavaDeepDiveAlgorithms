@@ -270,6 +270,38 @@ public class singlyLinkedList<T> {
 
     }
 
+    /*method to reverse a linked list iteratively*/
+    public void reverse (){
+
+        /*The current node is the node we are presently referring to*/
+        Node<T> current = head;
+
+        /*The next node is the one which is just ahead of current node in our original linked list*/
+        Node<T> next = null;
+
+        /*The previous node is the one which is just before the current node in our original linked list*/
+        Node<T> prev = null;
+
+        while (current!=null){
+            /*These two statements are for reversing direction of pointers in the linked list*/
+            /*First we store the link of current node in the next node
+             * and then modify this link to now point the other way i.e. point at previous */
+            next = current.getNext();
+            current.setNext(prev);
+
+            /*These two statement update the while loop condition
+             * Because for our next iteration, we want both prev and
+             * current to move ahead by one position.*/
+            prev = current; // prev becomes current
+            current = next; // current becomes next
+        }
+
+        // our old head is new tail
+        tail = head;
+        // our new head is prev
+        head = prev;
+    }
+
     /*  Function to display elements  */
     public void display() {
 
