@@ -27,7 +27,7 @@ public class App {
             {
                 case 1 :
                     System.out.println("Enter integer element to insert");
-//                    list.insertAtStart( scan.nextInt() );
+                    list.prepend( scan.nextInt() );
                     break;
                 case 2 :
                     System.out.println("Enter integer element to insert");

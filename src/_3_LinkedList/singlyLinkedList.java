@@ -114,6 +114,37 @@ public class singlyLinkedList<T> {
 
 
 
+    /**
+     * method to add a node at the front of the linked list
+     * @param value data value of the node to be prepended
+     *              to the linked list
+     */
+    public void prepend(T value){
+
+        // firstly, we create the node which is to be prepended to the linked list
+        Node<T> toBeAdded = new Node<>(value, null);
+
+        // Scenario 1: The linked list we are prepending to is empty
+        if (isEmpty()){
+            head = tail = toBeAdded;
+        }
+
+        else {
+            // Scenario 2: The linked list we are inserting to is non-empty
+
+            /* the new node starts pointing to the current head (which by the way
+            is pointing to the first node of the linked list) */
+            toBeAdded.setNext(head);
+
+            /* Having established a link from the new node to the old head of our linked list
+            we need to change the current head of linked list so that it refers to new node */
+            head = toBeAdded;
+        }
+
+        // increment the size of the linked list
+        size++;
+    }
+
     /*  Function to display elements  */
     public void display() {
 
