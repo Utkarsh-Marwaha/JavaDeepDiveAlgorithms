@@ -477,6 +477,86 @@ public class singlyLinkedList<T> {
         return finalList.getNext();
     }
 
+    /**
+     *
+     * @param a first linked list
+     * @param b second linked list
+     * @return intersection point of the two linked lists
+     */
+    public Node<Integer> getIntersectionPoint(Node<Integer> a, Node<Integer> b){
+
+        a = mergeSort(a);
+        b = mergeSort(b);
+
+        Node<Integer> intersectionPoint;
+
+        while (a != null && b!=null){
+
+            if (a.getData() < b.getData()){
+                a = a.getNext();
+            }
+            else if (a.getData() > b.getData()){
+                b = b.getNext();
+            }
+            else {
+                intersectionPoint = a;
+                intersectionPoint.setNext(null);
+                return intersectionPoint;
+            }
+        }
+        return null;
+    }
+
+    /**
+     *
+     * @param node head of the linked list
+     * @return head of the linked list after its duplicates have been removed
+     */
+    public Node<Integer> removeDuplicate(Node<Integer> node){
+
+        /*There are no duplicates if the linked list is empty or singleton*/
+        if (node == null || node.getNext() == null){
+            return node;
+        }
+
+        node = mergeSort(node);
+        return removeDuplicatesSortedLL(node);
+    }
+
+    /**
+     *
+     * @param node head of the linked list which is sorted
+     * @return head of the linked list after its duplicates have been removed
+     */
+    public Node<Integer> removeDuplicatesSortedLL(Node<Integer> node){
+
+        /*There are no duplicates if the linked list is empty or singleton*/
+        if (node == null || node.getNext() == null){
+            return node;
+        }
+
+        /*
+        Since the linked list is sorted, we can compare adjacent elements
+        to detect the duplicates
+         */
+
+        // if the neighbouring elements are found to be duplicates
+        if (node.getData().equals(node.getNext().getData())){
+
+            // then just skip the second duplicate
+            node.setNext(node.getNext().getNext());
+
+            // and continue checking from the same node (since there could be multiple duplicates)
+            removeDuplicatesSortedLL(node);
+        }
+        else {
+            // in case the adjacent elements aren't duplicates then move onto the next element
+            removeDuplicatesSortedLL(node.getNext());
+        }
+
+        return node;
+    }
+
     /*  Function to display elements  */
     public void display() {
 
