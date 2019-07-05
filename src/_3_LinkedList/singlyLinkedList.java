@@ -405,6 +405,78 @@ public class singlyLinkedList<T> {
         return merge(mergeSort(h1),mergeSort(h2));
     }
 
+    /**
+     * method to find the union of two linked list
+     * @param a first linked list
+     * @param b second linked list
+     * @return union of the two given linked lists
+     */
+    public Node<Integer> union(Node<Integer> a, Node<Integer> b){
+       a = mergeSort(a);
+       b = mergeSort(b);
+
+
+        Node<Integer> ptr = new Node<>(0, null);
+        Node<Integer> finalList = ptr;
+
+        while (a!=null && b!=null){
+
+            if (a.getData() < b.getData()){
+                ptr.setNext(a);
+                a = a.getNext();
+            }
+            else if (a.getData() > b.getData()){
+                ptr.setNext(b);
+                b = b.getNext();
+            } else {
+                ptr.setNext(a);
+                a = a.getNext();
+                b = b.getNext();
+            }
+            ptr = ptr.getNext();
+        }
+
+        ptr.setNext((a==null? b:a));
+        return finalList.getNext();
+    }
+
+    /**
+     * method to find the intersection of two linked list
+     * @param a first linked list
+     * @param b second linked list
+     * @return intersection of the two given linked lists
+     */
+    public Node<Integer> intersection(Node<Integer> a, Node<Integer> b){
+
+        a = mergeSort(a);
+        b = mergeSort(b);
+
+        Node<Integer> ptr = new Node<>(0, null);
+        Node<Integer> finalList = ptr;
+
+        while (a!=null && b!=null){
+
+            if (a.getData() < b.getData()){
+                a = a.getNext();
+            }
+
+            else if (a.getData() > b.getData()){
+                b = b.getNext();
+            }
+
+            else {
+                ptr.setNext(a);
+                a = a.getNext();
+                b = b.getNext();
+                ptr = ptr.getNext();
+            }
+        }
+
+        ptr.setNext(null);
+
+        return finalList.getNext();
+    }
+
     /*  Function to display elements  */
     public void display() {
 
