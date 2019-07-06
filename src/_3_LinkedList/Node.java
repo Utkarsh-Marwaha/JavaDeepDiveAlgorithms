@@ -15,6 +15,12 @@ public class Node<T> {
         this.next = next;
     }
 
+    /* default constructor */
+    public Node(){
+        data = null;
+        next = null;
+    }
+
     /**
      *
      * @return data of the current node

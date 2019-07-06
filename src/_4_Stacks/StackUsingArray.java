@@ -91,6 +91,8 @@ public class StackUsingArray<T> implements Stack<T> {
         }
 
         T temp = stack[elements-1];
+
+        // decrement the size of the stack
         elements--;
         return temp;
 
