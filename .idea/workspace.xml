@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1b32008-f917-42a8-bf86-b53879866820" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/_7_Searching/BinarySearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_6_HashTables/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_6_HashTables/HashTables.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -14,20 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/_7_Searching/LinearSearch.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="845">
-              <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/_7_Searching/BinarySearch.java">
+        <entry file="file://$PROJECT_DIR$/src/_6_HashTables/Employee.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="695">
-              <caret line="66" column="12" selection-start-line="66" selection-start-column="12" selection-end-line="66" selection-end-column="12" />
+            <state relative-caret-position="345">
+              <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -89,6 +81,8 @@
         <option value="$PROJECT_DIR$/src/_5_Queues/QueueUseLL.java" />
         <option value="$PROJECT_DIR$/src/_7_Searching/LinearSearch.java" />
         <option value="$PROJECT_DIR$/src/_7_Searching/BinarySearch.java" />
+        <option value="$PROJECT_DIR$/src/_6_HashTables/HashTables.md" />
+        <option value="$PROJECT_DIR$/src/_6_HashTables/Employee.java" />
       </list>
     </option>
   </component>
@@ -126,7 +120,7 @@
               <item name="JavaDeepDiveAlgorithms" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaDeepDiveAlgorithms" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="_7_Searching" type="462c0819:PsiDirectoryNode" />
+              <item name="_6_HashTables" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -499,7 +493,14 @@
       <option name="project" value="LOCAL" />
       <updated>1562395582326</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="binary search added">
+      <created>1562396302384</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1562396302384</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -544,7 +545,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="bubble sort: optimised implementation added" />
     <MESSAGE value="selection sort: implementation added" />
     <MESSAGE value="insertion sort: implementation added" />
     <MESSAGE value="shell sort: implementation added" />
@@ -569,7 +569,8 @@
     <MESSAGE value="Added queue main program" />
     <MESSAGE value="Added queue implementation using linked list" />
     <MESSAGE value="linear search added" />
-    <option name="LAST_COMMIT_MESSAGE" value="linear search added" />
+    <MESSAGE value="binary search added" />
+    <option name="LAST_COMMIT_MESSAGE" value="binary search added" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Arrays/Main.java" />
@@ -774,17 +775,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/_7_Searching/LinearSearch.java">
+    <entry file="file://$PROJECT_DIR$/src/_6_HashTables/HashTables.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="845">
-          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+        <state relative-caret-position="75">
+          <caret line="5" column="38" lean-forward="true" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/_7_Searching/BinarySearch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="695">
-          <caret line="66" column="12" selection-start-line="66" selection-start-column="12" selection-end-line="66" selection-end-column="12" />
+        <state relative-caret-position="300">
+          <caret line="38" column="29" lean-forward="true" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_7_Searching/LinearSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="845">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_6_HashTables/Employee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
         </state>
       </provider>
     </entry>
