@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1b32008-f917-42a8-bf86-b53879866820" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/_4_Stacks/Stack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_4_Stacks/StackEmptyException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_4_Stacks/StackUsingArray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -14,32 +17,32 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/_3_LinkedList/Node.java">
+        <entry file="file://$PROJECT_DIR$/src/_4_Stacks/Stack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="710">
-              <caret line="60" selection-start-line="59" selection-start-column="19" selection-end-line="60" selection-end-column="5" />
+            <state relative-caret-position="165">
+              <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/_3_LinkedList/singlyLinkedList.java">
+        <entry file="file://$PROJECT_DIR$/src/_4_Stacks/StackUsingArray.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5235">
-              <caret line="421" column="21" lean-forward="true" selection-start-line="421" selection-start-column="21" selection-end-line="421" selection-end-column="21" />
+            <state>
+              <caret lean-forward="true" />
               <folding>
-                <element signature="e#573#574#0" expanded="true" />
-                <element signature="e#600#601#0" expanded="true" />
+                <element signature="e#1281#1282#0" expanded="true" />
+                <element signature="e#1445#1446#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/_3_LinkedList/App.java">
+        <entry file="file://$PROJECT_DIR$/src/_4_Stacks/StackEmptyException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+            <state relative-caret-position="30">
+              <caret line="2" column="52" selection-start-line="2" selection-start-column="52" selection-end-line="2" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -49,6 +52,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -78,6 +82,9 @@
         <option value="$PROJECT_DIR$/src/_3_LinkedList/Node.java" />
         <option value="$PROJECT_DIR$/src/_3_LinkedList/App.java" />
         <option value="$PROJECT_DIR$/src/_3_LinkedList/singlyLinkedList.java" />
+        <option value="$PROJECT_DIR$/src/_4_Stacks/Stack.java" />
+        <option value="$PROJECT_DIR$/src/_4_Stacks/StackEmptyException.java" />
+        <option value="$PROJECT_DIR$/src/_4_Stacks/StackUsingArray.java" />
       </list>
     </option>
   </component>
@@ -98,8 +105,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -116,12 +121,14 @@
               <item name="JavaDeepDiveAlgorithms" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaDeepDiveAlgorithms" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="_3_LinkedList" type="462c0819:PsiDirectoryNode" />
+              <item name="_4_Stacks" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -432,7 +439,14 @@
       <option name="project" value="LOCAL" />
       <updated>1562286778734</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="singly linked list: intersection point and remove duplicates added">
+      <created>1562295200171</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1562295200171</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -442,7 +456,7 @@
     <frame x="67" y="27" width="1853" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25290537" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2556724" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -585,8 +599,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/_3_LinkedList/Node.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="710">
+        <state relative-caret-position="780">
           <caret line="60" selection-start-line="59" selection-start-column="19" selection-end-line="60" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_3_LinkedList/singlyLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="847">
+          <caret line="421" column="21" selection-start-line="421" selection-start-column="21" selection-end-line="421" selection-end-column="21" />
+          <folding>
+            <element signature="e#573#574#0" expanded="true" />
+            <element signature="e#600#601#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -597,13 +622,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/_3_LinkedList/singlyLinkedList.java">
+    <entry file="file://$PROJECT_DIR$/src/_4_Stacks/Stack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5235">
-          <caret line="421" column="21" lean-forward="true" selection-start-line="421" selection-start-column="21" selection-end-line="421" selection-end-column="21" />
+        <state relative-caret-position="165">
+          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_4_Stacks/StackEmptyException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="52" selection-start-line="2" selection-start-column="52" selection-end-line="2" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_4_Stacks/StackUsingArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="53" column="20" lean-forward="true" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
           <folding>
-            <element signature="e#573#574#0" expanded="true" />
-            <element signature="e#600#601#0" expanded="true" />
+            <element signature="e#1281#1282#0" expanded="true" />
+            <element signature="e#1445#1446#0" expanded="true" />
           </folding>
         </state>
       </provider>
