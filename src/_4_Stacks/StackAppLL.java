@@ -1,24 +1,24 @@
-package _5_Queues;
+package _4_Stacks;
 
 import java.util.Scanner;
 
-public class QueueUseStack {
+public class StackAppLL {
 
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
+        /* Creating object of class linkedStack */
 
-        /* Creating object of class Queue */
-        QueueUsingArray<Integer> queueArray = new QueueUsingArray<>(Integer.class);
+        StackUsingLL<Integer> ls = new StackUsingLL<>();
+        /* Perform Stack Operations */
 
-        /* Perform Queue Operations */
-        System.out.println("Queue Test\n");
+        System.out.println("Linked Stack Test\n");
         char ch;
 
         do {
-            System.out.println("\n Queue Operations");
-            System.out.println("1. enqueue");
-            System.out.println("2. dequeue");
+            System.out.println("\nLinked Stack Operations");
+            System.out.println("1. push");
+            System.out.println("2. pop");
             System.out.println("3. peek");
             System.out.println("4. check empty");
             System.out.println("5. size");
@@ -27,13 +27,13 @@ public class QueueUseStack {
 
             switch (choice) {
                 case 1 :
-                    System.out.println("Enter element to be enqueued");
-                    queueArray.enqueue(scan.nextInt());
+                    System.out.println("Enter element to be pushed");
+                    ls.push(scan.nextInt());
                     break;
 
                 case 2 :
                     try {
-                        System.out.println("dequeued Element = "+ queueArray.dequeue());
+                        System.out.println("Popped Element = "+ ls.pop());
                     }
                     catch (Exception e) {
                         System.out.println("Error : " + e.getMessage());
@@ -42,7 +42,7 @@ public class QueueUseStack {
 
                 case 3 :
                     try {
-                        System.out.println("Peek Element = "+ queueArray.front());
+                        System.out.println("Peek Element = "+ ls.top());
                     }
                     catch (Exception e) {
                         System.out.println("Error : " + e.getMessage());
@@ -50,11 +50,11 @@ public class QueueUseStack {
                     break;
 
                 case 4 :
-                    System.out.println("Empty status = "+ queueArray.isEmpty());
+                    System.out.println("Empty status = "+ ls.isEmpty());
                     break;
 
                 case 5 :
-                    System.out.println("Size = "+ queueArray.size());
+                    System.out.println("Size = "+ ls.size());
                     break;
 
                 default :

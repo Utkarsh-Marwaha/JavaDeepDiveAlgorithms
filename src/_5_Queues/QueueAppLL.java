@@ -2,7 +2,7 @@ package _5_Queues;
 
 import java.util.Scanner;
 
-public class QueueUseLL {
+public class QueueAppLL {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
