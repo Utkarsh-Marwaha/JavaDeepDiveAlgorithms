@@ -1,4 +1,4 @@
-package _6_HashTables;
+package _6_HashTables.SimpleHT;
 
 public class Employee {
 

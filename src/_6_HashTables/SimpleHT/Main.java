@@ -1,10 +1,10 @@
-package _6_HashTables;
+package _6_HashTables.SimpleHT;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        Employee [] employees = {
+        Employee[] employees = {
                 new Employee("Jane", "Jones", 123),
                 new Employee("John", "Doe", 4567),
                 new Employee("Mary", "Smith", 22),

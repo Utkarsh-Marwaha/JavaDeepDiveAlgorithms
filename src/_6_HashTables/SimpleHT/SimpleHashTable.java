@@ -1,4 +1,6 @@
-package _6_HashTables;
+package _6_HashTables.SimpleHT;
+
+import _6_HashTables.SimpleHT.Employee;
 
 public class SimpleHashTable {
 
