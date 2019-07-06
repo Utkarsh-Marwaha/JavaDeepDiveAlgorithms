@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1b32008-f917-42a8-bf86-b53879866820" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/_5_Queues/QueueUseLL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_5_Queues/QueueUsingLL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_5_Queues/QueueUse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_5_Queues/QueueUseStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,65 +12,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/_4_Stacks/StackUsingLL.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="19" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/_5_Queues/QueueUsingLL.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="800">
-              <caret line="103" column="31" selection-start-line="103" selection-start-column="31" selection-end-line="103" selection-end-column="31" />
-              <folding>
-                <element signature="e#972#973#0" expanded="true" />
-                <element signature="e#1006#1007#0" expanded="true" />
-                <element signature="e#1139#1140#0" expanded="true" />
-                <element signature="e#1170#1171#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/_5_Queues/QueueUseLL.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="12" lean-forward="true" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/_3_LinkedList/Node.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/_5_Queues/QueueUsingArray.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
-              <caret line="125" column="106" lean-forward="true" selection-start-line="125" selection-end-line="126" />
-              <folding>
-                <element signature="e#1342#1343#0" expanded="true" />
-                <element signature="e#1376#1377#0" expanded="true" />
-                <element signature="e#1509#1510#0" expanded="true" />
-                <element signature="e#1540#1541#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -160,24 +99,6 @@
               <item name="JavaDeepDiveAlgorithms" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaDeepDiveAlgorithms" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaDeepDiveAlgorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaDeepDiveAlgorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="_3_LinkedList" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaDeepDiveAlgorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaDeepDiveAlgorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="_4_Stacks" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaDeepDiveAlgorithms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaDeepDiveAlgorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="_5_Queues" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -536,7 +457,14 @@
       <option name="project" value="LOCAL" />
       <updated>1562375640870</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Added queue implementation using linked list">
+      <created>1562381816904</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1562381816904</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -544,7 +472,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="27" width="1853" height="1053" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.257886" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -581,7 +508,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="arrays: time and space complexity added" />
     <MESSAGE value="bubble sort: basic implementation added" />
     <MESSAGE value="bubble sort: optimised implementation added" />
     <MESSAGE value="selection sort: implementation added" />
@@ -606,7 +532,8 @@
     <MESSAGE value="Added Stack Use (main program)" />
     <MESSAGE value="Added queue implementation using array" />
     <MESSAGE value="Added queue main program" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added queue main program" />
+    <MESSAGE value="Added queue implementation using linked list" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added queue implementation using linked list" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Arrays/Main.java" />
@@ -764,30 +691,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/_4_Stacks/StackUsingLL.java">
+    <entry file="file://$PROJECT_DIR$/src/_5_Queues/QueueUseLL.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="19" />
+        <state relative-caret-position="210">
+          <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/_3_LinkedList/Node.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_5_Queues/QueueUsingArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="125" column="106" lean-forward="true" selection-start-line="125" selection-end-line="126" />
-          <folding>
-            <element signature="e#1342#1343#0" expanded="true" />
-            <element signature="e#1376#1377#0" expanded="true" />
-            <element signature="e#1509#1510#0" expanded="true" />
-            <element signature="e#1540#1541#0" expanded="true" />
-          </folding>
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
@@ -804,10 +718,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/_5_Queues/QueueUseLL.java">
+    <entry file="file://$PROJECT_DIR$/src/_5_Queues/QueueUsingArray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="12" lean-forward="true" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+        <state relative-caret-position="650">
+          <caret line="125" column="106" selection-start-line="125" selection-end-line="126" />
+          <folding>
+            <element signature="e#1342#1343#0" expanded="true" />
+            <element signature="e#1376#1377#0" expanded="true" />
+            <element signature="e#1509#1510#0" expanded="true" />
+            <element signature="e#1540#1541#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_4_Stacks/StackUsingLL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="19" />
         </state>
       </provider>
     </entry>
