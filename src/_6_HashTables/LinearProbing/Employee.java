@@ -1,10 +1,7 @@
-package _6_HashTables.SimpleHT;
+package _6_HashTables.LinearProbing;
 
 public class Employee {
 
-    /**
-     * instance fields of the employee class
-     */
     private String firstName;
     private String lastName;
     private int employeeID;
@@ -43,11 +40,5 @@ public class Employee {
      */
     public int getEmployeeID() {
         return employeeID;
-    }
-
-
-    @Override
-    public String toString() {
-        return "Employee{" + firstName + ' ' + lastName + " has employee ID: " + employeeID + '}';
     }
 }
