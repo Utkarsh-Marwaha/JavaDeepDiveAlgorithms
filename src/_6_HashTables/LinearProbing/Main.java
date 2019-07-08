@@ -11,7 +11,7 @@ public class Main {
                 new Employee("Bill", "End", 78)
         };
 
-        SimpleHashTable hashTable = new SimpleHashTable(5);
+        LinearProbingHT hashTable = new LinearProbingHT(5);
 
         for (Employee e: employees){
             hashTable.put(e.getLastName(), e);

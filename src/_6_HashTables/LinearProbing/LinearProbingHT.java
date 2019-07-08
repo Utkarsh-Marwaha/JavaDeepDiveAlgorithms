@@ -1,6 +1,6 @@
 package _6_HashTables.LinearProbing;
 
-public class SimpleHashTable {
+public class LinearProbingHT {
 
     // private Employee[] hashTable;
     private StoredEmployee[] hashTable;
@@ -8,7 +8,7 @@ public class SimpleHashTable {
     /**
      * @param capacity size of the hashtable
      */
-    public SimpleHashTable(int capacity) {
+    public LinearProbingHT(int capacity) {
         this.hashTable = new StoredEmployee[capacity];
     }
 
