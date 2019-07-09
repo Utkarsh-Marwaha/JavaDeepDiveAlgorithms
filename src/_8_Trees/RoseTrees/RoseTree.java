@@ -1,4 +1,4 @@
-package _8_Trees;
+package _8_Trees.RoseTrees;
 
 
 public class RoseTree<T> {
