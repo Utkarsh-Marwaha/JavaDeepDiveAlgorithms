@@ -7,7 +7,7 @@ public class BTUse {
         Scanner scan = new Scanner(System.in);
 
         /* Creating object of Binary Tree */
-        BinaryTree bt = new BinaryTree();
+        BinaryTree bt = new BinaryTree<Integer>();
 
         /*  Perform tree operations  */
         System.out.println("Binary Tree Test\n");
