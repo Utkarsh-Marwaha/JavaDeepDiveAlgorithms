@@ -22,7 +22,7 @@ public class RadixSort {
             countArray[getDigit(position, value, radix)]++;
         }
 
-        /*Next, we’ll cumulatively add up the values in the populated count array,
+        /*Next, we’ll cumulatively add up the values in the populated countNodes array,
           building it up as we go along.
          */
         for (int j = 1; j < countArray.length; j++){
@@ -39,8 +39,8 @@ public class RadixSort {
 
         /*Finally, we’ll create a new sorted array, which will be the same length as our original array.
           We’ll iterate over our original array, and translate the values over to our new array by using
-          our count array, incrementing our count array value as we continue to sort. In this step, we’re
-          effectively using a version of a hashing function, and using our count array as a way to translate
+          our countNodes array, incrementing our countNodes array value as we continue to sort. In this step, we’re
+          effectively using a version of a hashing function, and using our countNodes array as a way to translate
           values from the unsorted array into the new, sorted one.*/
         for (int num: input){
 

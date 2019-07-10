@@ -17,7 +17,7 @@ public class BTUse {
             System.out.println("\nBinary Tree Operations\n");
             System.out.println("1. insert "); // delete, mirror, sum tree, path, LCA
             System.out.println("2. search");  // proceed to BST
-            System.out.println("3. count nodes");
+            System.out.println("3. countNodes nodes");
             System.out.println("4. check empty");
             System.out.println("5. find height");
             System.out.println("6. find sum");

@@ -47,25 +47,25 @@ public class BinaryTree<T> {
         return node;
     }
 
-    /*method to count the number of nodes in a tree*/
+    /*method to countNodes the number of nodes in a tree*/
     public int countNodes(){
         return countNodes(root);
     }
 
     /**
-     * method to count the number of nodes in binary tree recursively
+     * method to countNodes the number of nodes in binary tree recursively
      *
      * @param node root of the tree whose nodes have to be counted
      * @return number of nodes present in the tree with the given root
      */
     private int countNodes(BTNode<Integer> node) {
 
-        // if the tree is empty then there are no nodes to count
+        // if the tree is empty then there are no nodes to countNodes
         if (node == null){
             return 0;
         }
 
-        // count nodes from left subtree + 1 + count nodes from right subtree
+        // countNodes nodes from left subtree + 1 + countNodes nodes from right subtree
         return countNodes(node.getLeft()) + 1 + countNodes(node.getRight());
     }
 

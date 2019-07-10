@@ -71,7 +71,7 @@ public class CountSort {
         // create the array for maintaining the counts / frequencies of the elements
         int[] countArray = new int[(max-min)+1];
 
-        // cycle through the input array and count the number of occurrences
+        // cycle through the input array and countNodes the number of occurrences
         for (int num : input){
             countArray[num - min] +=  1;
         }
@@ -81,7 +81,7 @@ public class CountSort {
 
         // traverse the range of values
         for (int num : input){
-            // pick the frequency of the value from count array
+            // pick the frequency of the value from countNodes array
             // till the frequency becomes 0
             while (countArray[num - min] != 0){
                 // update element in original array
@@ -118,7 +118,7 @@ public class CountSort {
         int [] min_max  = getMinMax(input);
         int min = min_max[0], max = min_max[1];
 
-        /*To start, we must create a “count array”, which we’ll populate by tallying up
+        /*To start, we must create a “countNodes array”, which we’ll populate by tallying up
          (or hashing) all the elements in the original array by how many times they appear
           in the unsorted array.
          */
@@ -128,7 +128,7 @@ public class CountSort {
             countArray[num-min]++;
         }
 
-        /*Next, we’ll cumulatively add up the values in the populated count array,
+        /*Next, we’ll cumulatively add up the values in the populated countNodes array,
           building it up as we go along.
          */
         for (int j = 1; j < countArray.length; j++){
@@ -145,8 +145,8 @@ public class CountSort {
 
         /*Finally, we’ll create a new sorted array, which will be the same length as our original array.
           We’ll iterate over our original array, and translate the values over to our new array by using
-          our count array, incrementing our count array value as we continue to sort. In this step, we’re
-          effectively using a version of a hashing function, and using our count array as a way to translate
+          our countNodes array, incrementing our countNodes array value as we continue to sort. In this step, we’re
+          effectively using a version of a hashing function, and using our countNodes array as a way to translate
           values from the unsorted array into the new, sorted one.*/
         for (int num: input){
 

@@ -23,7 +23,7 @@ public class BSTUse {
             System.out.println("1.  add a node ");
             System.out.println("2.  delete a node");
             System.out.println("3.  search a node");
-            System.out.println("4.  count nodes");
+            System.out.println("4.  countNodes nodes");
             System.out.println("5.  check empty");
             System.out.println("6.  find height");
             System.out.println("7.  find diameter");

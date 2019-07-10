@@ -3,7 +3,7 @@ package _8_Trees.RoseTrees;
 
 public class RoseTree<T> {
 
-    private RoseTreeNode<T> root;
+    private RoseTreeNode<Integer> root;
 
     /*constructor*/
     public RoseTree(){
@@ -19,6 +19,12 @@ public class RoseTree<T> {
         return root == null;
     }
 
+
+    /*method to countNodes the number of nodes in a tree*/
+    public int countNodes(){
+        return countNodes(root);
+    }
+
     /**
      * time complexity  = O(number of nodes)
      * space complexity = O(height of the tree)
@@ -27,27 +33,31 @@ public class RoseTree<T> {
      * @return number of nodes present in the rose tree with
      * the given root
      */
-    public int count(RoseTreeNode<T> node){
+    public int countNodes(RoseTreeNode<Integer> node){
 
         /*if the tree is empty then there are 0 nodes present in it*/
-        if (node==null){
+        if (node == null){
             return 0;
         }
 
-        // This variable will keep count of the number of nodes present in the tree
+        // This variable will keep countNodes of the number of nodes present in the tree
         int size = 0;
 
         // cycle through all the children of the current node
         for (int i = 0; i < node.getChildren().size(); i++){
 
-            // recall the count() for each subtree and accumulate the result in the `size` variable
-            size += count(node.getChildren().get(i));
+            // recall the countNodes() for each subtree and accumulate the result in the `size` variable
+            size += countNodes(node.getChildren().get(i));
         }
 
         // add one to the size to account for the root node
         return size+1;
     }
 
+    /*method to find the sum of a rose tree*/
+    public int sum(){
+        return sum(root);
+    }
 
     /**
      * time complexity  = O(number of nodes)
@@ -77,6 +87,10 @@ public class RoseTree<T> {
         return node.getData() + total;
     }
 
+    /*method to find the largest element of a rose tree*/
+    public int largest(){
+        return largest(root);
+    }
 
     /**
      * time complexity  = O(number of nodes)
@@ -120,6 +134,11 @@ public class RoseTree<T> {
 
         // return the maximum value a.k.a largest element
         return max;
+    }
+
+    /*method to find the smallest element of a rose tree*/
+    public int smallest(){
+        return smallest(root);
     }
 
     /**
@@ -166,6 +185,12 @@ public class RoseTree<T> {
         return min;
     }
 
+
+    /*method to find the height of a rose tree*/
+    public int height(){
+        return height(root);
+    }
+
     /**
      * time complexity  = O(number of nodes)
      * space complexity = O(height of the tree)
@@ -173,7 +198,7 @@ public class RoseTree<T> {
      * @param node root of the rose tree
      * @return height of the rose tree
      */
-    public int height(RoseTreeNode<T> node){
+    public int height(RoseTreeNode<Integer> node){
 
         if (node == null){
             return 0;
