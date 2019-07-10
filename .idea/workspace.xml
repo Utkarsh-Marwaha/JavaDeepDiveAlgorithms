@@ -4,8 +4,6 @@
     <list default="true" id="b1b32008-f917-42a8-bf86-b53879866820" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/src/_8_Trees/BinarySearchTrees/BST.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/_8_Trees/BinarySearchTrees/BSTNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_8_Trees/BinaryTrees/BTUse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_8_Trees/BinaryTrees/BTUse.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,52 +15,48 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/_8_Trees/BinarySearchTrees/BSTNode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/_8_Trees/BinarySearchTrees/BST.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/_8_Trees/BinaryTrees/BTNode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="1190">
+              <caret line="323" column="17" lean-forward="true" selection-start-line="323" selection-start-column="17" selection-end-line="323" selection-end-column="17" />
+              <folding>
+                <element signature="e#219#220#0" expanded="true" />
+                <element signature="e#246#247#0" expanded="true" />
+                <element signature="e#401#402#0" expanded="true" />
+                <element signature="e#436#437#0" expanded="true" />
+                <element signature="e#2449#2450#0" expanded="true" />
+                <element signature="e#2492#2493#0" expanded="true" />
+                <element signature="e#4146#4147#0" expanded="true" />
+                <element signature="e#4178#4179#0" expanded="true" />
+                <element signature="e#4778#4779#0" expanded="true" />
+                <element signature="e#4814#4815#0" expanded="true" />
+                <element signature="e#5458#5459#0" expanded="true" />
+                <element signature="e#5494#5495#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/_8_Trees/BinarySearchTrees/BSTUse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/_8_Trees/BinaryTrees/BinaryTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="845">
+              <caret line="282" lean-forward="true" selection-start-line="234" selection-start-column="4" selection-end-line="282" />
               <folding>
                 <element signature="e#2035#2036#0" expanded="true" />
                 <element signature="e#2078#2079#0" expanded="true" />
                 <element signature="e#3473#3474#0" expanded="true" />
                 <element signature="e#3505#3506#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/_8_Trees/BinaryTrees/BTUse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="845">
-              <caret line="85" column="1" lean-forward="true" selection-start-line="85" selection-start-column="1" selection-end-line="85" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -88,6 +82,7 @@
       <find>pop</find>
       <find>top</find>
       <find>ls</find>
+      <find>BTNode</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -144,9 +139,9 @@
         <option value="$PROJECT_DIR$/src/_8_Trees/BTNode.java" />
         <option value="$PROJECT_DIR$/src/_8_Trees/BinaryTrees/BTNode.java" />
         <option value="$PROJECT_DIR$/src/_8_Trees/BinarySearchTrees/BSTNode.java" />
-        <option value="$PROJECT_DIR$/src/_8_Trees/BinarySearchTrees/BST.java" />
         <option value="$PROJECT_DIR$/src/_8_Trees/BinaryTrees/BinaryTree.java" />
         <option value="$PROJECT_DIR$/src/_8_Trees/BinaryTrees/BTUse.java" />
+        <option value="$PROJECT_DIR$/src/_8_Trees/BinarySearchTrees/BST.java" />
       </list>
     </option>
   </component>
@@ -710,7 +705,14 @@
       <option name="project" value="LOCAL" />
       <updated>1562653145066</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Binary Tree generic modified">
+      <created>1562729757189</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1562729757190</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -718,7 +720,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="27" width="1853" height="1053" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27006087" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -755,7 +756,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="singly linked list: intersection point and remove duplicates added" />
     <MESSAGE value="Stack using array added" />
     <MESSAGE value="Added default constructor to Node of Linked List&#10;Added Stack implementation using linked list" />
     <MESSAGE value="Added Stack Use (main program)" />
@@ -780,7 +780,20 @@
     <MESSAGE value="Rose Tree added" />
     <MESSAGE value="Rose Tree directory refactored" />
     <MESSAGE value="Binary Tree added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Binary Tree added" />
+    <MESSAGE value="Binary Tree generic modified" />
+    <option name="LAST_COMMIT_MESSAGE" value="Binary Tree generic modified" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/_8_Trees/BinaryTrees/BinaryTree.java</url>
+          <line>219</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Arrays/Main.java" />
@@ -1145,10 +1158,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/_8_Trees/BinarySearchTrees/BST.java">
+    <entry file="file://$PROJECT_DIR$/src/_8_Trees/BinaryTrees/BTNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1159,23 +1172,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/_8_Trees/BinaryTrees/BTNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/_8_Trees/BinaryTrees/BinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="845">
+          <caret line="282" lean-forward="true" selection-start-line="234" selection-start-column="4" selection-end-line="282" />
           <folding>
             <element signature="e#2035#2036#0" expanded="true" />
             <element signature="e#2078#2079#0" expanded="true" />
             <element signature="e#3473#3474#0" expanded="true" />
             <element signature="e#3505#3506#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_8_Trees/BinarySearchTrees/BST.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1190">
+          <caret line="323" column="17" lean-forward="true" selection-start-line="323" selection-start-column="17" selection-end-line="323" selection-end-column="17" />
+          <folding>
+            <element signature="e#219#220#0" expanded="true" />
+            <element signature="e#246#247#0" expanded="true" />
+            <element signature="e#401#402#0" expanded="true" />
+            <element signature="e#436#437#0" expanded="true" />
+            <element signature="e#2449#2450#0" expanded="true" />
+            <element signature="e#2492#2493#0" expanded="true" />
+            <element signature="e#4146#4147#0" expanded="true" />
+            <element signature="e#4178#4179#0" expanded="true" />
+            <element signature="e#4778#4779#0" expanded="true" />
+            <element signature="e#4814#4815#0" expanded="true" />
+            <element signature="e#5458#5459#0" expanded="true" />
+            <element signature="e#5494#5495#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_8_Trees/BinarySearchTrees/BSTUse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
         </state>
       </provider>
     </entry>
